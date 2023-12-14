@@ -23,7 +23,7 @@ const Contato = ({
   const dispatch = useDispatch()
   const [estaEditando, setEstaEditando] = useState(false)
   const [nome, setNome] = useState('')
-  const [numero, setNumero] = useState('')
+  const [numero, setNumero] = useState(0)
   const [email, setEmail] = useState('')
 
   useEffect(() => {
@@ -54,7 +54,9 @@ const Contato = ({
           type="tel"
           disabled={!estaEditando}
           value={numero}
-          onChange={(evento) => setNumero(evento.target.value)}
+          onChange={(evento) =>
+            setNumero(evento.target.value as unknown as number)
+          }
         />
         <Descricao
           type="email"

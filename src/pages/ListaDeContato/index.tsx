@@ -18,7 +18,7 @@ const ListaDeContato = () => {
     dispatch(
       cadastrar({
         nome,
-        numero: 1,
+        numero: Number(numero),
         email,
       })
     )
@@ -30,21 +30,21 @@ const ListaDeContato = () => {
       <Card>
         <Form onSubmit={cadastrarTarefa}>
           <Campo
+            type="text"
             value={nome}
             onChange={(evento) => setNome(evento.target.value)}
-            type="text"
             placeholder="Nome"
           />
           <Campo
+            type="tel"
             value={numero}
             onChange={(evento) => setNumero(evento.target.value)}
-            type="tel"
             placeholder="Número"
           />
           <Campo
+            type="email"
             value={email}
             onChange={(evento) => setEmail(evento.target.value)}
-            type="email"
             placeholder="Email"
           />
           <BotaoAdicionar type="submit">Adicionar contato</BotaoAdicionar>
