@@ -1,16 +1,11 @@
 import { useDispatch } from 'react-redux'
 import { useEffect, useState } from 'react'
 
-import {
-  Botao,
-  BotaoCancelarRemover,
-  BotaoSalvar,
-  MainContainer,
-} from '../../styles/styles'
+import { Botao, BotaoCancelarRemover, BotaoSalvar } from '../../styles/styles'
 
 import { remover, editar } from '../../store/reducers'
 import ContatoClass from '../../models/index'
-import { Card, Descricao } from './styles'
+import { Card, Descricao, MainContainer } from './styles'
 
 type Props = ContatoClass
 

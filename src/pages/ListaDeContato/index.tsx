@@ -2,8 +2,14 @@ import { FormEvent, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { cadastrar } from '../../store/reducers'
 
-import { Campo, Form, Titulo, BotaoAdicionar, Card } from './styles'
-import { MainContainer } from '../../styles/styles'
+import {
+  Campo,
+  Form,
+  Titulo,
+  BotaoAdicionar,
+  Card,
+  MainContainer,
+} from './styles'
 
 const ListaDeContato = () => {
   const dispatch = useDispatch()

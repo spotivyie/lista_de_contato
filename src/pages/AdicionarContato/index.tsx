@@ -1,5 +1,4 @@
-import { Titulo } from './styles'
-import { MainContainer } from '../../styles/styles'
+import { Titulo, MainContainer } from './styles'
 import Contato from '../../components/Tarefa'
 import { useSelector } from 'react-redux'
 import { RootReducer } from '../../store'

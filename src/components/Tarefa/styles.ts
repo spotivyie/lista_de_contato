@@ -1,22 +1,27 @@
 import styled from 'styled-components'
+import variaveis from '../../styles/variaveis'
 
 export const Card = styled.div`
-  background-color: #fcfcfc;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 16px;
   margin-bottom: 32px;
   border-radius: 12px;
 `
 
+export const MainContainer = styled.main`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
 export const Descricao = styled.input`
-  color: #8b8b8b;
+  color: ${variaveis.preto};
   font-size: 14px;
   line-height: 24px;
   display: block;
   width: 100%;
   margin-bottom: 8px;
-  margin-top: 8px;
   resize: none;
-  border: none;
+  border: 1px solid ${variaveis.preto};
   background-color: transparent;
+  padding: 8px;
+  width: 160%;
 `

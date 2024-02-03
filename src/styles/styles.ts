@@ -11,24 +11,16 @@ const EstiloGlobal = createGlobalStyle`
   }
 `
 
-export const MainContainer = styled.main`
-  padding: 0 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`
-
 export const Botao = styled.button`
-  font-weight: bold;
-  font-size: 12px;
-  color: #fff;
-  padding: 8px 12px;
-  border: none;
-  cursor: pointer;
+  color: ${variaveis.branco};
   background-color: ${variaveis.verde};
-  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 12px;
   margin-right: 8px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
 `
 
 export const BotaoCancelarRemover = styled(Botao)`
